@@ -3,46 +3,63 @@ import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
 ---
 
-<header>
-	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
-		<div class="internal-links">
+<header class="m-0 px-4 py-4 bg-black border-double border-y-8 border-blue-800 text-white">
+	<nav class="flex items-center justify-between">
+		<h2 class="m-0 text-base"><a href="/" class="font-Retro">{SITE_TITLE}</a></h2>
+		<div class="flex items-center gap-6">	
+
 			<HeaderLink href="/">Home</HeaderLink>
-			<HeaderLink href="/blog">Blog</HeaderLink>
-			<HeaderLink href="/about">About</HeaderLink>
+			<HeaderLink href="/blog">Réalisations</HeaderLink>
+			<HeaderLink href="/about">Qui suis-je</HeaderLink>
+				
 		</div>
-		<div class="social-links">
-			<a href="https://m.webtoo.ls/@astro" target="_blank">
-				<span class="sr-only">Follow Astro on Mastodon</span>
-				<svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32"
-					><path
-						fill="currentColor"
-						d="M11.19 12.195c2.016-.24 3.77-1.475 3.99-2.603.348-1.778.32-4.339.32-4.339 0-3.47-2.286-4.488-2.286-4.488C12.062.238 10.083.017 8.027 0h-.05C5.92.017 3.942.238 2.79.765c0 0-2.285 1.017-2.285 4.488l-.002.662c-.004.64-.007 1.35.011 2.091.083 3.394.626 6.74 3.78 7.57 1.454.383 2.703.463 3.709.408 1.823-.1 2.847-.647 2.847-.647l-.06-1.317s-1.303.41-2.767.36c-1.45-.05-2.98-.156-3.215-1.928a3.614 3.614 0 0 1-.033-.496s1.424.346 3.228.428c1.103.05 2.137-.064 3.188-.189zm1.613-2.47H11.13v-4.08c0-.859-.364-1.295-1.091-1.295-.804 0-1.207.517-1.207 1.541v2.233H7.168V5.89c0-1.024-.403-1.541-1.207-1.541-.727 0-1.091.436-1.091 1.296v4.079H3.197V5.522c0-.859.22-1.541.66-2.046.456-.505 1.052-.764 1.793-.764.856 0 1.504.328 1.933.983L8 4.39l.417-.695c.429-.655 1.077-.983 1.934-.983.74 0 1.336.259 1.791.764.442.505.661 1.187.661 2.046v4.203z"
-					></path></svg
-				>
-			</a>
-			<a href="https://twitter.com/astrodotbuild" target="_blank">
-				<span class="sr-only">Follow Astro on Twitter</span>
-				<svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32"
-					><path
-						fill="currentColor"
-						d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
-					></path></svg
-				>
-			</a>
-			<a href="https://github.com/withastro/astro" target="_blank">
-				<span class="sr-only">Go to Astro's GitHub repo</span>
-				<svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32"
-					><path
-						fill="currentColor"
-						d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-					></path></svg
-				>
-			</a>
+		<div class="flex items-center justify-center gap-4">
+
+			<div class="flex items-center gap-2">
+				<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect width="8" height="8" fill="#FDE033"/>
+					</svg>
+
+				<a href="https://www.linkedin.com/in/noan-chouard/" class="" target="_blank">
+					<span class="sr-only">Suivez-moi sur Linkedin</span>
+					
+					<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M10.6665 25.3333H6.6665V12H10.6665V25.3333ZM25.3332 25.3333H21.3332V18.2107C21.3332 16.3547 20.6718 15.4307 19.3612 15.4307C18.3225 15.4307 17.6638 15.948 17.3332 16.984V25.3333H13.3332C13.3332 25.3333 13.3865 13.3333 13.3332 12H16.4905L16.7345 14.6667H16.8172C17.6372 13.3333 18.9478 12.4293 20.7452 12.4293C22.1118 12.4293 23.2172 12.8093 24.0612 13.764C24.9105 14.72 25.3332 16.0027 25.3332 17.804V25.3333Z" fill="#FDE033"/>
+						<path d="M8.66676 10.6666C9.80815 10.6666 10.7334 9.7712 10.7334 8.66663C10.7334 7.56206 9.80815 6.66663 8.66676 6.66663C7.52538 6.66663 6.6001 7.56206 6.6001 8.66663C6.6001 9.7712 7.52538 10.6666 8.66676 10.6666Z" fill="#FDE033"/>
+					</svg>
+					
+				</a>
+			</div>
+
+			<div class="flex items-center gap-2">
+				<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect width="8" height="8" fill="#FDE033"/>
+					</svg>
+
+				<a href="mailto:noan.chouad@outlook.fr" class="flex" target="_blank">
+					<span class="sr-only">Contacter-moi par e-mail</span>
+					<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M29.3332 5.33337H2.6665V26.6667H29.3332V5.33337ZM5.33317 24V8.00004H26.6665V24H5.33317ZM10.6665 10.6667H7.99984V13.3334H10.6665V16H13.3332V18.6667H18.6665V16H21.3332V13.3334H23.9998V10.6667H21.3332V13.3334H18.6665V16H13.3332V13.3334H10.6665V10.6667Z" fill="#FDE033"/>
+					</svg>
+				</a>
+			</div>
+
+			<div class="flex items-center gap-2">
+				<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect width="8" height="8" fill="#FDE033"/>
+					</svg>
+
+				<a href="https://www.behance.net/noanchouard111" class="flex" target="_blank">
+					<span class="sr-only">Regarder mes projets sur Behance</span>
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M8.072 9.301C8.072 9.301 9.964 9.154 9.964 6.842C9.964 4.527 8.416 3.401 6.454 3.401H0V16.327H6.454C6.454 16.327 10.395 16.456 10.395 12.511C10.394 12.51 10.566 9.301 8.072 9.301ZM2.844 5.697H6.454C6.454 5.697 7.332 5.697 7.332 7.041C7.332 8.387 6.816 8.582 6.23 8.582H2.844V5.697ZM6.271 14.029H2.844V10.574H6.454C6.454 10.574 7.762 10.556 7.762 12.349C7.762 13.861 6.785 14.018 6.271 14.029ZM15.649 6.688C10.878 6.688 10.882 11.655 10.882 11.655C10.882 11.655 10.556 16.596 15.649 16.596C15.649 16.596 19.892 16.85 19.892 13.159H17.71C17.71 13.159 17.782 14.55 15.722 14.55C15.722 14.55 13.538 14.702 13.538 12.3H19.961C19.962 12.299 20.67 6.688 15.649 6.688ZM17.59 10.574H13.516C13.516 10.574 13.782 8.582 15.698 8.582C17.614 8.582 17.59 10.574 17.59 10.574ZM18.097 4.16H12.98V5.754H18.097V4.16Z" fill="#FDE033"/>
+					</svg>
+				</a>
+			</div>
 		</div>
 	</nav>
 </header>
-<style>
+<!-- <style>
 	header {
 		margin: 0;
 		padding: 0 1em;
@@ -58,11 +75,7 @@ import { SITE_TITLE } from '../consts';
 	h2 a.active {
 		text-decoration: none;
 	}
-	nav {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
+
 	nav a {
 		padding: 1em 0.5em;
 		color: var(--black);
@@ -82,4 +95,4 @@ import { SITE_TITLE } from '../consts';
 			display: none;
 		}
 	}
-</style>
+</style> -->

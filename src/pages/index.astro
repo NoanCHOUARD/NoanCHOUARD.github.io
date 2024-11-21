@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+
 ---
 
 <!doctype html>
@@ -11,39 +12,105 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+		<Header/>
+		<main class="w-screen">
+
+			<div class="flex justify-end relative items-center w-full h-auto p-6">
+
+				<div class="w-36 h-auto">
+					<svg class="fill-white hover:fill-blue-700" width="max" height="auto" viewBox="0 0 144 259" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect x="82.748" y="91.0302" width="24" height="24" transform="rotate(90 82.748 91.0302)" fill="#0A0A0A"/>
+						<rect x="64.876" y="34.9839" width="24" height="24" transform="rotate(60 64.876 34.9839)" fill="#0A0A0A"/>
+						<rect x="24.6978" y="0.406769" width="24" height="24" transform="rotate(30 24.6978 0.406769)" fill="#0A0A0A"/>
+						<rect x="32.438" y="242.385" width="15.9" height="15.9" transform="rotate(-90 32.438 242.385)" fill="black"/>
+						<rect x="16.5381" y="226.485" width="15.9" height="15.9" transform="rotate(-90 16.5381 226.485)" fill="black"/>
+						<rect x="0.638184" y="210.586" width="15.9" height="15.9" transform="rotate(-90 0.638184 210.586)" fill="black"/>
+						<rect x="0.638184" y="178.785" width="15.9" height="15.9" transform="rotate(-90 0.638184 178.785)" fill="black"/>
+						<rect x="0.638184" y="194.685" width="15.9" height="15.9" transform="rotate(-90 0.638184 194.685)" fill="black"/>
+						<rect x="16.5381" y="162.885" width="15.9" height="15.9" transform="rotate(-90 16.5381 162.885)" fill="black"/>
+						<rect x="32.438" y="146.985" width="15.9" height="15.9" transform="rotate(-90 32.438 146.985)" fill="black"/>
+						<rect x="48.3384" y="162.885" width="15.9" height="15.9" transform="rotate(-90 48.3384 162.885)" fill="black"/>
+						<rect x="48.3384" y="178.785" width="15.9" height="15.9" transform="rotate(-90 48.3384 178.785)" fill="black"/>
+						<rect x="80.1382" y="178.785" width="15.9" height="15.9" transform="rotate(-90 80.1382 178.785)" fill="black"/>
+						<rect x="64.2383" y="194.685" width="15.9" height="15.9" transform="rotate(-90 64.2383 194.685)" fill="black"/>
+						<rect x="80.1382" y="162.885" width="15.9" height="15.9" transform="rotate(-90 80.1382 162.885)" fill="black"/>
+						<rect x="96.0381" y="146.985" width="15.9" height="15.9" transform="rotate(-90 96.0381 146.985)" fill="black"/>
+						<rect x="111.938" y="162.885" width="15.9" height="15.9" transform="rotate(-90 111.938 162.885)" fill="black"/>
+						<rect x="127.838" y="178.785" width="15.9" height="15.9" transform="rotate(-90 127.838 178.785)" fill="black"/>
+						<rect x="127.838" y="194.685" width="15.9" height="15.9" transform="rotate(-90 127.838 194.685)" fill="black"/>
+						<rect x="127.838" y="210.586" width="15.9" height="15.9" transform="rotate(-90 127.838 210.586)" fill="black"/>
+						<rect x="111.938" y="226.485" width="15.9" height="15.9" transform="rotate(-90 111.938 226.485)" fill="black"/>
+						<rect x="96.0381" y="242.385" width="15.9" height="15.9" transform="rotate(-90 96.0381 242.385)" fill="black"/>
+						<rect x="80.1382" y="258.285" width="15.9" height="15.9" transform="rotate(-90 80.1382 258.285)" fill="black"/>
+						<rect x="64.2383" y="258.285" width="15.9" height="15.9" transform="rotate(-90 64.2383 258.285)" fill="black"/>
+						<rect x="48.3384" y="258.285" width="15.9" height="15.9" transform="rotate(-90 48.3384 258.285)" fill="black"/>
+					</svg>
+				</div>
+			
+			</div>
+
+			<div class="flex justify-center items-center w-full h-auto gap-6 font-Retro">
+
+				<div class="grid">
+					
+					<h1 class="text-8xl font-Retro">Portfolio</h1>
+
+					<div class="flex gap-10">
+						<h3 class="text-4xl font-Retro">Noan Chouard</h3>
+						<img src="" alt="">
+					</div>
+
+				</div>
+
+				<svg width="125" height="125" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M124.167 0.5H35.8333V18.1667H18.1667V35.8333H0.5V124.167H18.1667V141.833H35.8333V159.5H124.167V141.833H141.833V124.167H159.5V35.8333H141.833V18.1667H124.167V0.5ZM124.167 18.1667V35.8333H141.833V124.167H124.167V141.833H35.8333V124.167H18.1667V35.8333H35.8333V18.1667H124.167Z" fill="black"/>
+					<path d="M116.598 98.4296V93.8165H111.985V89.2034H107.359V84.5779H102.746V79.9648H107.359V75.3517H111.985V70.7262H116.598V66.1131H125.836V70.7262H121.211V75.3517H116.598V79.9648H111.985V84.5779H116.598V89.2034H121.211V93.8165H125.836V98.4296H116.598Z" fill="#0A0A0A"/>
+					<path d="M72.7363 98.4296V93.8165H95.8266V98.4296H72.7363Z" fill="#0A0A0A"/>
+					<path d="M56.5903 93.8165V66.1131H42.7386V93.8165H56.5903ZM38.1131 98.4296V93.8165H33.5V66.1131H38.1131V61.5H61.2034V66.1131H65.8165V93.8165H61.2034V98.4296H38.1131Z" fill="#0A0A0A"/>
+				</svg>
+
+			</div>
+
+			<div class="w-24 h-auto mx-10 grid grid-flow-col grid-cols-1">
+
+				<svg width="max" height="auto" viewBox="0 0 182 181" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M94.1111 0H26.8889V13.4444H13.4444V26.8889H0V94.1111H13.4444V107.556H26.8889V121H94.1111V107.556H107.556V94.1111H121V26.8889H107.556V13.4444H94.1111V0ZM94.1111 13.4444V26.8889H107.556V94.1111H94.1111V107.556H26.8889V94.1111H13.4444V26.8889H26.8889V13.4444H94.1111Z" fill="#FFEA00"/>
+					<rect x="13" y="13" width="95" height="95" fill="#FFEA00"/>
+					<path d="M155.111 60H87.8889V73.4444H74.4444V86.8889H61V154.111H74.4444V167.556H87.8889V181H155.111V167.556H168.556V154.111H182V86.8889H168.556V73.4444H155.111V60ZM155.111 73.4444V86.8889H168.556V154.111H155.111V167.556H87.8889V154.111H74.4444V86.8889H87.8889V73.4444H155.111Z" fill="#0A0A0A"/>
+					<rect x="74" y="73" width="95" height="95" fill="#0A0A0A"/>
+					</svg>					
+
+			</div>
+
+			<section class="flex justify-between p-10">
+				
+				<p class="text-lg font-Rubik font-semibold">Graphiste, infographiste</br>et webdesigner.</p>
+				
+				<p class="text-2xl font-Retro">Portfolio</p>
+			
+			</section>
+
+			<section class="flex bg-black border-double border-y-8 border-blue-800 px-10 w-screen text-white h-auto p-10">
+				
+				<div class="grid grid-cols-1 grid-flow-row grid-row-3 gap-2 w-1/2">
+
+					<h2 class="text-4xl font-Retro">Un prénom</h2>
+
+					<h3 class="text-lg font-Retro">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque assumenda veritatis ipsam obcaecati debitis accusamus alias magnam recusandae dolorum soluta, ex aut labore consequuntur ut optio cumque iste dolores! Mollitia esse placeat nesciunt! Quas minus nesciunt, ratione sint dignissimos omnis optio quo dolorem illum, iusto dolores odit quis error similique pariatur eveniet, ea voluptas velit nihil.</p>
+
+				</div>
+
+				<div class="w-1/2 h-auto">
+
+					<img src="" alt="">
+
+				</div>
+			
+			</section>
+
+
 		</main>
 		<Footer />
 	</body>
