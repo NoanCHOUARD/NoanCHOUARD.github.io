@@ -7,7 +7,7 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://github.com/NoanCHOUARD/Noan.CHOUARD.github.io',
+    site: 'https:NoanCHOUARD/Noan.CHOUARD.github.io',
     integrations: [mdx(), sitemap(), tailwind()],
 });
 
