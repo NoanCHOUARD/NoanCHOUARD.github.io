@@ -4,6 +4,11 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
+import { Image } from 'astro:assets';
+import Photoface from '../../public/portfolio2.png'
+import Logoapp1 from '../../public/logo-Ai.png'
+
+
 ---
 
 <!doctype html>
@@ -13,7 +18,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	</head>
 	<body>
 		<Header/>
-		<main class="w-screen">
+		<main class="w-screen bg-secondaryblack">
 
 			<div class="flex justify-end relative items-center w-full h-auto p-6">
 
@@ -49,7 +54,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 			
 			</div>
 
-			<div class="flex justify-center items-center w-full h-auto gap-6 font-Retro">
+			<div class="flex justify-center items-center w-full h-auto gap-6 font-Retro text-primaryellow">
 
 				<div class="grid">
 					
@@ -82,7 +87,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 			</div>
 
-			<section class="flex justify-between p-10">
+			<section class="flex justify-between p-10 text-primaryellow">
 				
 				<p class="text-lg font-Rubik font-semibold">Graphiste, infographiste</br>et webdesigner.</p>
 				
@@ -90,9 +95,17 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 			
 			</section>
 
-			<section class="flex bg-black border-double border-y-8 border-blue-800 px-10 w-screen text-white h-auto p-10">
+			<div class="w-screen h-auto bg-primaryblack border-y-4 border-primaryblue">
+
+				<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M37.3333 26.6667V16H48H90.6667V21.3333H101.333V32H112V37.3333V42.6667H101.333V48H90.6667V53.3333H80V58.6667H69.3333V61.3333H58.6667V64V66.6667H69.3333V69.3333H80V74.6667H90.6667V80H101.333V85.3333H112V96H101.333V106.667H90.6667V112H37.3333V101.333H26.6667V90.6667H16V37.3333H26.6667V26.6667H37.3333Z" fill="#FFFF00"/>
+				</svg>
+
+			</div>
+
+			<section class="w-screen flex bg-secondaryblack justify-between items-center h-auto px-44 text-basewhite py-10">
 				
-				<div class="grid grid-cols-1 grid-flow-row grid-row-3 gap-2 w-1/2">
+				<div class="w-1/2 grid grid-cols-1 grid-flow-row grid-row-3 gap-2">
 
 					<h2 class="text-4xl font-Retro">Un prénom</h2>
 
@@ -100,14 +113,97 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque assumenda veritatis ipsam obcaecati debitis accusamus alias magnam recusandae dolorum soluta, ex aut labore consequuntur ut optio cumque iste dolores! Mollitia esse placeat nesciunt! Quas minus nesciunt, ratione sint dignissimos omnis optio quo dolorem illum, iusto dolores odit quis error similique pariatur eveniet, ea voluptas velit nihil.</p>
 
+					<div class="flex justify-between gap-5 py-2">
+
+						<button class="bg-primaryblack text-primaryellow hover:text-secondaryellow border-4 border-primaryblue hover:border-primaryellow duration-300 rounded-lg py-2 px-5 font-Retro hover:scale-110">Mon CV</button>
+
+						<div class="flex px-5">
+							<a class="fill-primaryellow hover:fill-secondaryellow duration-300 scale-110"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M10.6665 25.3333H6.6665V12H10.6665V25.3333ZM25.3332 25.3333H21.3332V18.2107C21.3332 16.3547 20.6718 15.4307 19.3612 15.4307C18.3225 15.4307 17.6638 15.948 17.3332 16.984V25.3333H13.3332C13.3332 25.3333 13.3865 13.3333 13.3332 12H16.4905L16.7345 14.6667H16.8172C17.6372 13.3333 18.9478 12.4293 20.7452 12.4293C22.1118 12.4293 23.2172 12.8093 24.0612 13.764C24.9105 14.72 25.3332 16.0027 25.3332 17.804V25.3333Z" fill="currentColor"/>
+								<path d="M8.66676 10.6666C9.80815 10.6666 10.7334 9.7712 10.7334 8.66663C10.7334 7.56206 9.80815 6.66663 8.66676 6.66663C7.52538 6.66663 6.6001 7.56206 6.6001 8.66663C6.6001 9.7712 7.52538 10.6666 8.66676 10.6666Z" fill="currentColor"/>
+								</svg>
+							</a>
+						</div>	
+
+					</div>
+
 				</div>
 
-				<div class="w-1/2 h-auto">
+				<div class="w-max items-center justify-center">
 
-					<img src="" alt="">
+					<Image src={Photoface} width="400"
+					height="200" alt="Ma photo me représentant dans la vie réelle"/>
 
 				</div>
 			
+			</section>
+
+			<div class="w-screen h-auto flex flex-row-reverse bg-primaryblack border-y-4 border-primaryblue">
+
+				<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" class=" rotate-180">
+					<path d="M37.3333 26.6667V16H48H90.6667V21.3333H101.333V32H112V37.3333V42.6667H101.333V48H90.6667V53.3333H80V58.6667H69.3333V61.3333H58.6667V64V66.6667H69.3333V69.3333H80V74.6667H90.6667V80H101.333V85.3333H112V96H101.333V106.667H90.6667V112H37.3333V101.333H26.6667V90.6667H16V37.3333H26.6667V26.6667H37.3333Z" fill="#FFFF00"/>
+				</svg>
+
+			</div>
+
+			<section class="w-screen flex flex-col gap-5 justify-between items-start h-auto bg-primaryblack px-44 text-white py-10 text-basewhite">
+				
+				<div class="w-1/2 grid grid-cols-1 grid-flow-row grid-row-3 gap-2">
+
+					<h2 class="text-4xl font-Retro">Mes outils</h2>
+
+					<h3 class="text-lg font-Retro">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+
+				</div>
+
+				<div class="w-screen flex gap-5">
+
+					<div class="relative">
+						<a class="absolute inset-0 z-10 bg-primaryorange text-primaryblack font-Retro text-center flex flex-col items-center justify-center hover:translate-y-2 hover:translate-x-2 opacity-0 hover:opacity-100 bg-opacity-50 duration-300 border-4 border-primaryblue rounded-xl">
+						  <h1>Adobe<br>Illustrator</h1>
+						<a href="#" class="relative">
+							<div class="w-max h-auto flex flex-wrap content-center">
+								<Image src={Logoapp1} width="150"
+						height="150" alt="Logo de l'application Adobe Illustrator"/>
+							</div>
+						</a>
+					  </div>
+
+					  <div class="relative">
+						<a class="absolute inset-0 z-10 bg-primaryorange text-primaryblack font-Retro text-center flex flex-col items-center justify-center hover:translate-y-2 hover:translate-x-2 opacity-0 hover:opacity-100 bg-opacity-50 duration-300 border-4 border-primaryblue rounded-xl">
+						  <h1  class=tracking-wider>Adobe<br>Illustrator</h1>
+						<a href="#" class="relative">
+							<div class="w-max h-auto flex flex-wrap content-center">
+								<Image src={Logoapp1} width="150"
+						height="150" alt="Logo de l'application Adobe Illustrator"/>
+							</div>
+						</a>
+					  </div>
+
+					  <div class="relative">
+						<a class="absolute inset-0 z-10 bg-primaryorange text-primaryblack font-Retro text-center flex flex-col items-center justify-center hover:translate-y-2 hover:translate-x-2 opacity-0 hover:opacity-100 bg-opacity-50 duration-300 border-4 border-primaryblue rounded-xl">
+						  <h1  class=tracking-wider>Adobe<br>Illustrator</h1>
+						<a href="#" class="relative">
+							<div class="w-max h-auto flex flex-wrap content-center">
+								<Image src={Logoapp1} width="150"
+						height="150" alt="Logo de l'application Adobe Illustrator"/>
+							</div>
+						</a>
+					  </div>
+
+					  <div class="relative">
+						<a class="absolute inset-0 z-10 bg-primaryorange text-primaryblack font-Retro text-center flex flex-col items-center justify-center hover:translate-y-2 hover:translate-x-2 opacity-0 hover:opacity-100 bg-opacity-50 duration-300 border-4 border-primaryblue rounded-xl">
+						  <h1  class=tracking-wider>Adobe<br>Illustrator</h1>
+						<a href="#" class="relative">
+							<div class="w-max h-auto flex flex-wrap content-center">
+								<Image src={Logoapp1} width="150"
+						height="150" alt="Logo de l'application Adobe Illustrator"/>
+							</div>
+						</a>
+					  </div>
+
+				</div>		
+
 			</section>
 
 
