@@ -9,6 +9,12 @@
   src: url('../fonts/Retro-Gaming.ttf') format('truetype');
 }
 
+html{
+  
+  @apply scroll-smooth;
+
+}
+
 @layer base {
 
   :root{

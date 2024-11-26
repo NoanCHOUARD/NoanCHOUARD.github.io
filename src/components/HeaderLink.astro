@@ -10,7 +10,7 @@ const subpath = pathname.match(/[^\/]+/g);
 const isActive = href === pathname || href === '/' + subpath?.[0];
 ---
 
-<a href={href} class="flex items-center gap-2 fill-primaryellow hover:fill-secondaryellow font-Retro text-secondaryellow hover:font-bold hover:text-primaryellow duration-300 hover:scale-105" class:list={[className, { active: isActive }]} {...props}>
+<a href={href} class="flex items-center gap-2 fill-primaryellow hover:fill-secondaryellow font-Retro text-secondaryellow hover:text-primaryellow duration-300 hover:scale-110" class:list={[className, { active: isActive }]} {...props}>
 
 	<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<rect width="8" height="8" fill="currentColor"/>
