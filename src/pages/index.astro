@@ -6,25 +6,13 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 import { Image } from 'astro:assets';
 import Photoface from '../../public/portfolio2.png';
-import LogoAi from '../../public/logo-Ai.png';
-import LogoPs from '../../public/logo-Ps.png';
-import LogoInd from '../../public/logo-Ind.png';
-import LogoPr from '../../public/logo-Pr.png';
-import LogoFigma from '../../public/logo-figma.png';
-
-import LogoHtml from '../../public/logo-html.png';
-import LogoCSS from '../../public/logo-css.png';
-import LogoReact from '../../public/logo-react.png';
-import LogoTailwind from '../../public/logo-tailwindcss.png';
-
-
-
 ---
 
 <!doctype html>
 <html lang="en" class="scroll-smooth">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+
 	</head>
 	<body>
 		<Header/>
@@ -129,7 +117,7 @@ import LogoTailwind from '../../public/logo-tailwindcss.png';
 
 						<div class="flex justify-center items-center px-5 gap-5">
 							
-							<button class="bg-primaryblack text-primaryellow hover:text-secondaryellow border-4 border-primaryblue hover:border-primaryellow duration-300 rounded-lg py-2 px-5 font-Retro hover:scale-110"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<button class="opacity-0 bg-primaryblack text-primaryellow hover:text-secondaryellow border-4 border-primaryblue hover:border-primaryellow duration-300 rounded-lg py-2 px-5 font-Retro hover:scale-110"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M10.6665 25.3333H6.6665V12H10.6665V25.3333ZM25.3332 25.3333H21.3332V18.2107C21.3332 16.3547 20.6718 15.4307 19.3612 15.4307C18.3225 15.4307 17.6638 15.948 17.3332 16.984V25.3333H13.3332C13.3332 25.3333 13.3865 13.3333 13.3332 12H16.4905L16.7345 14.6667H16.8172C17.6372 13.3333 18.9478 12.4293 20.7452 12.4293C22.1118 12.4293 23.2172 12.8093 24.0612 13.764C24.9105 14.72 25.3332 16.0027 25.3332 17.804V25.3333Z" fill="currentColor"/>
 								<path d="M8.66676 10.6666C9.80815 10.6666 10.7334 9.7712 10.7334 8.66663C10.7334 7.56206 9.80815 6.66663 8.66676 6.66663C7.52538 6.66663 6.6001 7.56206 6.6001 8.66663C6.6001 9.7712 7.52538 10.6666 8.66676 10.6666Z" fill="currentColor"/>
 								</svg>
@@ -161,132 +149,22 @@ import LogoTailwind from '../../public/logo-tailwindcss.png';
 				</svg>
 
 			</div>
-
-			<section class="w-screen flex flex-col gap-5 justify-between items-start h-auto bg-secondaryblack px-44 text-white py-10 text-basewhite">
-				
-				<div class="w-full grid grid-cols-1 grid-flow-row grid-row-3 gap-2">
-
-					<h2 class="text-4xl font-Retro">Mes outils</h2>
-
-					<h3 class="text-lg font-Retro">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-
-				</div>
-
-				<div class="w-full flex justify-between">
-
-					<div class="w-max grid grid-cols-3 grid-rows-2 gap-3 justify-center">
-
-						<div class="w-max relative">
-							<a class="absolute inset-0 z-10 bg-primaryorange text-primaryblack font-Retro text-center flex flex-col items-center justify-center hover:translate-y-2 hover:translate-x-2 opacity-0 hover:opacity-100 bg-opacity-50 duration-300 border-4 border-primaryblue rounded-xl">
-							<h1>Adobe<br>Illustrator</h1>
-							<a href="#" class="relative">
-								<div class="w-max h-auto flex flex-wrap content-center">
-									<Image src={LogoAi} width="150"
-							height="150" alt="Logo de l'application Adobe Illustrator"/>
-								</div>
-							</a>
-						</div>
-
-						<div class="w-max relative">
-							<a class="absolute inset-0 z-10 bg-primaryorange text-primaryblack font-Retro text-center flex flex-col items-center justify-center hover:translate-y-2 hover:translate-x-2 opacity-0 hover:opacity-100 bg-opacity-50 duration-300 border-4 border-primaryblue rounded-xl">
-							<h1  class=tracking-wider>Adobe<br>Photoshop</h1>
-							<a href="#" class="relative">
-								<div class="w-max h-auto flex flex-wrap content-center">
-									<Image src={LogoPs} width="150"
-							height="150" alt="Logo de l'application Adobe Illustrator"/>
-								</div>
-							</a>
-						</div>
-
-						<div class="w-max relative">
-							<a class="absolute inset-0 z-10 bg-primaryorange text-primaryblack font-Retro text-center flex flex-col items-center justify-center hover:translate-y-2 hover:translate-x-2 opacity-0 hover:opacity-100 bg-opacity-50 duration-300 border-4 border-primaryblue rounded-xl">
-							<h1  class=tracking-wider>Adobe<br>InDesign</h1>
-							<a href="#" class="relative">
-								<div class="w-max h-auto flex flex-wrap content-center">
-									<Image src={LogoInd} width="150"
-							height="150" alt="Logo de l'application Adobe Illustrator"/>
-								</div>
-							</a>
-						</div>
-
-						<div class="w-max relative">
-							<a class="absolute inset-0 z-10 bg-primaryorange text-primaryblack font-Retro text-center flex flex-col items-center justify-center hover:translate-y-2 hover:translate-x-2 opacity-0 hover:opacity-100 bg-opacity-50 duration-300 border-4 border-primaryblue rounded-xl">
-							<h1  class=tracking-wider>Adobe<br>Premiere<br>Pro</h1>
-							<a href="#" class="relative">
-								<div class="w-max h-auto flex flex-wrap content-center">
-									<Image src={LogoPr} width="150"
-							height="150" alt="Logo de l'application Adobe Illustrator"/>
-								</div>
-							</a>
-						</div>
-
-						<div class="w-max relative">
-							<a class="absolute inset-0 z-10 bg-primaryorange text-primaryblack font-Retro text-center flex flex-col items-center justify-center hover:translate-y-2 hover:translate-x-2 opacity-0 hover:opacity-100 bg-opacity-50 duration-300 border-4 border-primaryblue rounded-xl">
-							<h1>Figma</h1>
-							<a href="#" class="relative">
-								<div class="w-max h-auto flex flex-wrap content-center">
-									<Image src={LogoFigma} width="150"
-							height="150" alt="Logo de l'application Adobe Illustrator"/>
-								</div>
-							</a>
-						</div>
-					
-					</div>		
-
-					<div class="w-max grid grid-cols-2 grid-rows-2 gap-5 justify-center">
-					
-						<div class="w-max relative">
-							<a class="absolute inset-0 z-10 bg-primaryorange text-primaryblack font-Retro text-center flex flex-col items-center justify-center hover:translate-y-2 hover:translate-x-2 opacity-0 hover:opacity-100 bg-opacity-50 duration-300 border-4 border-primaryblue rounded-xl">
-							<h1>HTML 5</h1>
-							<a href="#" class="relative">
-								<div class="w-max h-auto flex flex-wrap content-center">
-									<Image src={LogoHtml} width="150"
-							height="150" alt="Logo de l'application Adobe Illustrator"/>
-								</div>
-							</a>
-						</div>
-
-						<div class="w-max relative">
-							<a class="absolute inset-0 z-10 bg-primaryorange text-primaryblack font-Retro text-center flex flex-col items-center justify-center hover:translate-y-2 hover:translate-x-2 opacity-0 hover:opacity-100 bg-opacity-50 duration-300 border-4 border-primaryblue rounded-xl">
-							<h1>CSS 3</h1>
-							<a href="#" class="relative">
-								<div class="w-max h-auto flex flex-wrap content-center">
-									<Image src={LogoCSS} width="150"
-							height="150" alt="Logo de l'application Adobe Illustrator"/>
-								</div>
-							</a>
-						</div>
-
-						<div class="w-max relative">
-							<a class="absolute inset-0 z-10 bg-primaryorange text-primaryblack font-Retro text-center flex flex-col items-center justify-center hover:translate-y-2 hover:translate-x-2 opacity-0 hover:opacity-100 bg-opacity-50 duration-300 border-4 border-primaryblue rounded-xl">
-							<h1>React</h1>
-							<a href="#" class="relative">
-								<div class="w-max h-auto flex flex-wrap content-center">
-									<Image src={LogoReact} width="150"
-							height="150" alt="Logo de l'application Adobe Illustrator"/>
-								</div>
-							</a>
-						</div>
-					
-						<div class="w-max relative">
-							<a class="absolute inset-0 z-10 bg-primaryorange text-primaryblack font-Retro text-center flex flex-col items-center justify-center hover:translate-y-2 hover:translate-x-2 opacity-0 hover:opacity-100 bg-opacity-50 duration-300 border-4 border-primaryblue rounded-xl">
-							<h1>TailWind<br>CSS</h1>
-							<a href="#" class="relative">
-								<div class="w-max h-auto flex flex-wrap content-center">
-									<Image src={LogoTailwind} width="150"
-							height="150" alt="Logo de l'application Adobe Illustrator"/>
-								</div>
-							</a>
-						</div>
-
-					</div>
-
-				</div>
-
-			</section>
-
-
 		</main>
 		<Footer />
+		<script is:inline>
+
+			const { animate, inView } = Motion
+
+			inView("button", (info) => {
+				console.log(info, "inview")
+				animate(
+					info.target,
+					{ y: 10, opacity: 1 },
+					{ duration:2 }
+				)
+			})
+		</script>
 	</body>
 </html>
+
+
