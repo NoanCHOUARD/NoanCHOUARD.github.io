@@ -35,12 +35,22 @@ export default {
 					'Retro': "Retro-Gaming, sans-serif",
 					'Rubik': "Rubik, sans-serif",
 			},
+			backgroundImage: {
+				'maze': "url('/maze.png')",
 		},
 	plugins: [],
-}
+	extend: {
+		keyframes: {
+			translation: {
+
+				},
+
+
+			}
+		},
+	}
 
 }
 
-
-
+}
 

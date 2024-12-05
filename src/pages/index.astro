@@ -6,6 +6,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 import { Image } from 'astro:assets';
 import Photoface from '../../public/portfolio2.png';
+import Maze from '../../public/maze.png';
 ---
 
 <!doctype html>
@@ -14,14 +15,14 @@ import Photoface from '../../public/portfolio2.png';
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 
 	</head>
-	<body>
+	<body class="w-screen h-auto bg-[url('/maze.png')] bg-no-repeat bg-scroll bg-cover backdrop-blur-md">
 		<Header/>
-		<main class="w-screen bg-secondaryblack">
+		<main class="w-screen relative">
 
-			<div class="flex justify-end relative items-center w-full h-auto p-6">
+			<div class="w-max h-auto flex items-center">
 
-				<div class="w-36 h-auto">
-					<svg class="fill-white hover:fill-blue-700" width="max" height="auto" viewBox="0 0 144 259" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<div class="w-max h-auto">
+					<svg class="fill-white hover:fill-blue-700" width="144" height="259" viewBox="0 0 144 259" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<rect x="82.748" y="91.0302" width="24" height="24" transform="rotate(90 82.748 91.0302)" fill="#0A0A0A"/>
 						<rect x="64.876" y="34.9839" width="24" height="24" transform="rotate(60 64.876 34.9839)" fill="#0A0A0A"/>
 						<rect x="24.6978" y="0.406769" width="24" height="24" transform="rotate(30 24.6978 0.406769)" fill="#0A0A0A"/>
@@ -52,7 +53,7 @@ import Photoface from '../../public/portfolio2.png';
 			
 			</div>
 
-			<div class="flex justify-center items-center w-full h-auto gap-6 font-Retro text-primaryellow">
+			<div class="w-screen h-auto flex justify-center items-center gap-6 font-Retro text-primaryellow">
 
 				<div class="grid">
 					
@@ -85,23 +86,23 @@ import Photoface from '../../public/portfolio2.png';
 
 			</div>
 
-			<section class="btnav flex justify-between p-10 text-primaryellow">
-				
-				<p class="text-lg font-Rubik font-semibold">Graphiste, infographiste</br>et webdesigner.</p>
-				
-				<p class="text-2xl font-Retro">Portfolio</p>
-			
-			</section>
+			<div class="w-screen flex justify-between items-center p-10 text-primaryellow">
+				<p class="text-lg font-Rubik font-semibold">Graphiste, infographiste et webdesigner</p>
+				<p class="text-xl font-Rubik">Portfolio</p>
+			</div>
 
-			<div class="w-screen h-auto bg-primaryblack border-y-4 border-primaryblue">
+		</main>
 
-				<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" class="pac-svg">
+
+			<!-- <div class="w-screen block h-32 bg-primaryblack border-y-4 border-primaryblue">
+
+				<svg width="128" height="auto" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" class="pac-svg">
 					<path d="M37.3333 26.6667V16H48H90.6667V21.3333H101.333V32H112V37.3333V42.6667H101.333V48H90.6667V53.3333H80V58.6667H69.3333V61.3333H58.6667V64V66.6667H69.3333V69.3333H80V74.6667H90.6667V80H101.333V85.3333H112V96H101.333V106.667H90.6667V112H37.3333V101.333H26.6667V90.6667H16V37.3333H26.6667V26.6667H37.3333Z" fill="#FFFF00"/>
 				</svg>
 
-			</div>
+			</div> -->
 
-			<section class="w-screen flex bg-secondaryblack justify-between items-center h-auto px-44 text-basewhite py-10">
+			<!-- <section class="w-screen flex bg-secondaryblack justify-between items-center h-auto px-44 text-basewhite py-10">
 				
 				<div class="w-1/2 grid grid-cols-1 grid-flow-row grid-row-3 gap-2">
 
@@ -140,20 +141,20 @@ import Photoface from '../../public/portfolio2.png';
 
 				</div>
 			
-			</section>
+			</section> -->
 
-			<div class="w-screen h-auto flex flex-row-reverse bg-primaryblack border-y-4 border-primaryblue">
+			<!-- <div class="w-screen block h-auto bg-primaryblack border-y-4 border-primaryblue">
 
-				<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" class=" rotate-180">
+				<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" class="pac-svg">
 					<path d="M37.3333 26.6667V16H48H90.6667V21.3333H101.333V32H112V37.3333V42.6667H101.333V48H90.6667V53.3333H80V58.6667H69.3333V61.3333H58.6667V64V66.6667H69.3333V69.3333H80V74.6667H90.6667V80H101.333V85.3333H112V96H101.333V106.667H90.6667V112H37.3333V101.333H26.6667V90.6667H16V37.3333H26.6667V26.6667H37.3333Z" fill="#FFFF00"/>
 				</svg>
 
-			</div>
-		</main>
+			</div> -->
+		
 		<Footer />
 		<script is:inline>
 
-			const { stagger, scroll, animate, inView } = Motion
+			const { stagger, animate, inView } = Motion
 
 			inView(".btnav", (info) => {
 				console.log(info, "inview")
@@ -180,14 +181,22 @@ import Photoface from '../../public/portfolio2.png';
 				const pacanime = animate(
 				".pac-svg",
 				{ x: 1920},
-				{ ease: "ease-in" }
+				{ duration: 5, repeatType: "", ease: "ease-in" }
+
 			)
-			
 			scroll(pacanime)
 			
-			})
+			});
 
 		</script>
+
+<!-- <style>
+	
+	
+	
+
+</style> -->
+
 	</body>
 </html>
 
