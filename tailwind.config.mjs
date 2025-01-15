@@ -5,38 +5,26 @@ export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		colors: {
-			primaryellow: 'hsl(var(--ylw-primary))',
-			secondaryellow: 'hsl(var(--ylw-secondary))',
 
-			primaryblack: 'hsl(var(--blk-primary))',
-			secondaryblack: 'hsl(var(--blk-secondary))',
-			
-			primaryblue: 'hsl(var(--blu-primary))',
-			secondaryblue: 'hsl(var(--blu-secondary))',
-
-			primaryred: 'hsl(var(--red-primary))',
-			secondaryred: 'hsl(var(--red-secondary))',
-
-			primarypink: 'hsl(var(--pnk-primary))',
-			secondarypink: 'hsl(var(--pnk-secondary))',
-
-			primaryorange: 'hsl(var(--org-primary))',
-			secondaryorange: 'hsl(var(--org-secondary))',
-
-			primarycyan: 'hsl(var(--cyn-primary))',
-			secondarycyan: 'hsl(var(--cyn-secondary))',
-
-			baseblack: 'hsl(var(--clr-black-base))',
-			basewhite: 'hsl(var(--clr-white-base))',
+			blue: 'hsl(var(--clr-blue))',
+			red: 'hsl(var(--clr-red))',
+			green: 'hsl(var(--clr-green))',
+			yellow: 'hsl(var(--clr-yellow))',
+			orange: 'hsl(var(--clr-orange))',
+			purple: 'hsl(var(--clr-purple))',
+			pink: 'hsl(var(--clr-pink))',
+			black: 'hsl(var(--clr-black))',
+			white: 'hsl(var(--clr-white))',
+			gray: 'hsl(var(--clr-gray))',
 
 		},
 			extend: {
 				fontFamily: {
 					'Retro': "Retro-Gaming, sans-serif",
-					'Rubik': "Rubik, sans-serif",
+					'Montserrat': "Montserrat, sans-serif",
 			},
 			backgroundImage: {
-				'maze': "url('/maze.png')",
+	
 		},
 	plugins: [],
 	extend: {

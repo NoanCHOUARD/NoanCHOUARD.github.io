@@ -18,49 +18,27 @@ html{
 @layer base {
 
   :root{
-
     
-    --ylw-primary : 60 100 50 ;
-    --ylw-secondary : 51 98 60 ;
+    --clr-blue : 210 98 60 ;
 
-    --blk-primary : 0 0 0 ;
-    --blk-secondary : 0 0 15 ;
+    --clr-yellow : 51 98 60 ;
+    
+    --clr-green : 127 98 60 ;
 
-    --blu-primary : 240 75 48 ;
-    --blu-secondary : 240 100 32 ;
+    --clr-red : 0 98 60 ;
 
-    --red-primary : 0 100 50 ;
-    --red-secondary : 0 99 65 ;
+    --clr-orange : 30 98 60 ;
 
-    --pnk-primary : 329 98 77 ;
-    --pnk-secondary : 329 100 86 ;
+    --clr-purple : 270 98 60 ;
 
-    --org-primary : 38 100 63 ;
-    --org-secondary : 21 100 79 ;
+    --clr-pink : 330 98 60 ;
 
-    --cyn-primary : 172 100 50 ;
-    --cyn-secondary : 172 100 71 ;
+    --clr-black : 0 0 9 ;
 
-    --clr-black-base : 0 0 0 ;
-    --clr-white-base : 255 255 255 ;
+    --clr-white : 0 0 100 ;
 
-    --scroll-direction :1 ;
+    --clr-gray : 0 0 50 ;
 
   }
 
-}
-
-.pac-svg {
-  animation: journeyed linear infinite;
-  animation-timeline: view(y);
-  animation-range: 25% 75%;
-}
-
-@keyframes journeyed {
-  0% {
-    transform: translate(0vw) scaleX(1);
-  }
-  100% {
-    transform: translate(100vw) scaleX(1);
-  }
 }
