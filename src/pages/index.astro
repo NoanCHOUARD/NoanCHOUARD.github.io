@@ -121,17 +121,17 @@ import uxui from '../../public/icons/logo-ui-ux.svg';
 
 				</div>
 
-				<div class="w-full grid grid-cols-4 px-10 py-5 gap-10">
+				<div class="w-full h-auto grid md:grid-cols-4 grid-cols-1 px-10 py-5 gap-10 text-center">
 					
 					<!-- Card Graphisme -->
 						
-				<a href="#" class="flex flex-col gap-1 pb-5 bg-white items-start group border-4 border-black rounded-lg shadow-md transition-all duration-300 hover:scale-105">
+				<a href="#" class="w-full h-auto flex flex-col gap-1 pb-5 bg-white items-center group border-4 border-black rounded-lg shadow-md transition-all duration-300 hover:scale-105">
 					
-					<Image class="object-cover w-full rounded-t-lg h-80 bg-white rounded-lg p-1" src={graphisme} alt=""/>
+					<Image class="object-cover w-60 rounded-t-lg h-auto bg-white rounded-lg md:px-4 px-1" src={graphisme} alt=""/>
 					
-					<h1 class="text-2xl px-3 transition-all group-hover:px-8 group-hover:text-3xl font-Retro">Graphisme</h1>
+					<h1 class="sm:text-xl text-base transition-all group-hover:text-2xl font-Retro">Graphisme</h1>
 
-					<ul class="list-none px-4 font-Montserrat transition-all group-hover:px-10 font-light text-sm group-hover:text-base grid justify-center gap-2">								
+					<ul class="list-none px-4 font-Montserrat transition-all group-hover:px-5 font-light text-sm group-hover: grid justify-center gap-2">								
 						<li class="flex gap-2 items-center">Lorem Ipsum</li>
 						<li class="flex gap-2 items-center">Lorem Ipsum</li>
 						<li class="flex gap-2 items-center">Lorem Ipsum</li>
@@ -141,49 +141,54 @@ import uxui from '../../public/icons/logo-ui-ux.svg';
 				</a>
 
 					<!-- Card Front-End -->
-				<a href="#" class="flex flex-col gap-1 pb-5 bg-white items-start group border-4 border-black rounded-lg shadow-md transition-all duration-300 hover:scale-105">
-					
-					<Image class="object-cover w-full rounded-t-lg h-80 bg-white rounded-lg p-1" src={frontend} alt=""/>
-					
-					<h1 class="text-2xl px-3 transition-all group-hover:px-8 group-hover:text-3xl font-Retro">Développement Front-end</h1>
-
-					<ul class="list-none px-4 font-Montserrat transition-all group-hover:px-10 font-light text-sm group-hover:text-base grid justify-center gap-2">								
-						<li class="flex gap-2 items-center">Lorem Ipsum</li>
-						<li class="flex gap-2 items-center">Lorem Ipsum</li>
-						<li class="flex gap-2 items-center">Lorem Ipsum</li>
-					</ul>
 				
-				</a>
+					<a href="#" class="w-full h-auto flex flex-col gap-1 pb-5 bg-white items-center group border-4 border-black rounded-lg shadow-md transition-all duration-300 hover:scale-105">
+					
+						<Image class="object-cover w-60 rounded-t-lg h-auto bg-white rounded-lg md:px-4 px-1" src={frontend} alt=""/>
+						
+						<h1 class="sm:text-xl text-base transition-all group-hover:text-2xl font-Retro">Développement Front-End</h1>
+	
+						<ul class="list-none px-4 font-Montserrat transition-all group-hover:px-5 font-light text-sm group-hover: grid justify-center gap-2">								
+							<li class="flex gap-2 items-center">Lorem Ipsum</li>
+							<li class="flex gap-2 items-center">Lorem Ipsum</li>
+							<li class="flex gap-2 items-center">Lorem Ipsum</li>
+							<li class="flex gap-2 items-center">Lorem Ipsum</li>
+						</ul>
+					
+					</a>
 
 					<!-- Card UI/UX -->
-				<a href="#" class="flex flex-col gap-1 pb-5 bg-white items-start group border-4 border-black rounded-lg shadow-md transition-all duration-300 hover:scale-105">
-					
-					<Image class="object-cover w-full rounded-t-lg h-80 bg-white rounded-lg p-1" src={uxui} alt=""/>
-					
-					<h1 class="text-2xl px-3 transition-all group-hover:px-8 group-hover:text-3xl font-Retro">Design UI <br /> et UX</h1>
-
-					<ul class="list-none px-4 font-Montserrat transition-all group-hover:px-10 font-light text-sm group-hover:text-base grid justify-center gap-2">								
-						<li class="flex gap-2 items-center">Lorem Ipsum</li>
-						<li class="flex gap-2 items-center">Lorem Ipsum</li>
-						<li class="flex gap-2 items-center">Lorem Ipsum</li>
-					</ul>
 				
-				</a>
-
-					<!-- Card communication -->
-				<!-- <a href="#" class="flex flex-col gap-1 pb-5 items-start group border-4 border-black rounded-lg shadow-md transition-all duration-300 hover:scale-105">
+					<a href="#" class="w-full h-auto flex flex-col gap-1 pb-5 bg-white items-center group border-4 border-black rounded-lg shadow-md transition-all duration-300 hover:scale-105">
 					
-					<Image class="object-cover w-full rounded-t-lg h-80 bg-white rounded-lg p-1" src={communication} alt=""/>
+						<Image class="object-cover w-60 rounded-t-lg h-auto bg-white rounded-lg md:px-4 px-1" src={uxui} alt=""/>
+						
+						<h1 class="sm:text-xl text-base transition-all group-hover:text-2xl font-Retro">Design UI/UX</h1>
+	
+						<ul class="list-none px-4 font-Montserrat transition-all group-hover:px-5 font-light text-sm group-hover: grid justify-center gap-2">								
+							<li class="flex gap-2 items-center">Lorem Ipsum</li>
+							<li class="flex gap-2 items-center">Lorem Ipsum</li>
+							<li class="flex gap-2 items-center">Lorem Ipsum</li>
+							<li class="flex gap-2 items-center">Lorem Ipsum</li>
+						</ul>
 					
-					<h1 class="text-2xl px-3 transition-all group-hover:px-8 group-hover:text-3xl font-Retro">Communcation</h1>
+					</a>
 
-					<ul class="list-none px-4 font-Montserrat transition-all group-hover:px-10 font-light text-sm group-hover:text-base grid justify-center gap-2">								
-						<li class="flex gap-2 items-center">Lorem Ipsum</li>
-						<li class="flex gap-2 items-center">Lorem Ipsum</li>
-						<li class="flex gap-2 items-center">Lorem Ipsum</li>
-					</ul>
-				
-				</a> -->
+					<!-- Card autres -->
+					<a href="#" class="w-full h-auto flex flex-col gap-1 pb-5 bg-white items-center group border-4 border-black rounded-lg shadow-md transition-all duration-300 hover:scale-105">
+					
+						<Image class="object-cover w-60 rounded-t-lg h-auto bg-white rounded-lg md:px-4 px-1" src={graphisme} alt=""/>
+						
+						<h1 class="sm:text-xl text-base transition-all group-hover:text-2xl font-Retro">Et bien plus !</h1>
+	
+						<ul class="list-none px-4 font-Montserrat transition-all group-hover:px-5 font-light text-sm group-hover: grid justify-center gap-2">								
+							<li class="flex gap-2 items-center">Lorem Ipsum</li>
+							<li class="flex gap-2 items-center">Lorem Ipsum</li>
+							<li class="flex gap-2 items-center">Lorem Ipsum</li>
+							<li class="flex gap-2 items-center">Lorem Ipsum</li>
+						</ul>
+					
+					</a>
 
 
 			</div>
