@@ -2,57 +2,84 @@
 import Layout from '../layouts/BlogPost.astro';
 import { Image } from 'astro:assets';
 
+import Photoface from '../../public/portfolio2.png';
+
 ---
 
 <Layout
-	title="About Me"
-	description="Lorem ipsum dolor sit amet"
+	title="Qui je suis ?"
+	description="Voici ma biographie rapide."
 	pubDate={new Date('August 08 2021')}
-	heroImage="/blog-placeholder-about.jpg"
+	heroImage="/portfolio3.JPG"
 >
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo
-		viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam
-		adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus
-		et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus
-		vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque
-		sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
-	</p>
 
-	<p>
-		Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non
+<div class="w-full grid grid-cols-1 grid-rows-1 gap-5 justify-center items-center h-auto bg-white text-gray px-5 py-10">
+
+	<h1 class="text-2xl font-Retro">Un fan de la pop-culture 🙂</h1>
+
+	<div class="w-full flex items-center justify-center gap-5 font-Montserrat text-base text-gray">
+
+		<p class="w-1/2 h-auto">
+			Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non
 		tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non
 		blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna
 		porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis
 		massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc.
-		Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis
-		bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra
-		massa massa ultricies mi.
-	</p>
+		</p>
+	
+		<Image src={Photoface} class={"w-1/4 h-auto"} alt=""/>
 
-	<p>
-		Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl
-		suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet
-		nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae
-		turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem
-		dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat
-		semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus
-		vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum
-		facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam
-		vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla
-		urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
-	</p>
+	</div>
 
-	<p>
-		Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper
-		viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc
-		scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur
-		gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus
-		pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim
-		blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id
-		cursus metus aliquam eleifend mi.
-	</p>
+	<h1 class="text-end text-2xl font-Retro">Un adulte avec un coeur d'enfant 😄</h1>
+
+	<div class="w-full flex items-center justify-center gap-5 font-Montserrat text-base text-gray">
+	
+		<Image src={Photoface} class={"w-1/4 h-auto"} alt=""/>
+
+		<p class="w-1/2 h-auto">
+			Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non
+		tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non
+		blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna
+		porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis
+		massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc.
+		</p>
+
+	</div>
+
+	<h1 class="text-2xl font-Retro">Un "Geek" toujours prêt à aider ! 🫡</h1>
+
+	<div class="w-full flex items-center justify-center gap-5 font-Montserrat text-base text-gray">
+
+		<p class="w-1/2 h-auto">
+			Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non
+		tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non
+		blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna
+		porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis
+		massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc.
+		</p>
+	
+		<Image src={Photoface} class={"w-1/4 h-auto"} alt=""/>
+
+	</div>
+
+	<h1 class="text-end text-2xl font-Retro">Un fan de jeux vidéo 😎</h1>
+
+	<div class="w-full flex items-center justify-center gap-5 font-Montserrat text-base text-gray">
+	
+		<Image src={Photoface} class={"w-1/4 h-auto"} alt=""/>
+
+		<p class="w-1/2 h-auto">
+			Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non
+		tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non
+		blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna
+		porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis
+		massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc.
+		</p>
+
+	</div>
+
+	<h1 class="text-center text-2xl font-Retro">En conclusion 😉</h1>
 
 	<p>
 		Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta
@@ -184,5 +211,7 @@ import { Image } from 'astro:assets';
 		</div>
 
 	</section>
+
+</div>
 
 </Layout>
